@@ -179,15 +179,15 @@
             <div></div>
             </div>
             <div class="tabs">
-                <form action="">
+                <form action="login" >
                     <!-- user name input -->
                     <div class="inputs">
                     <div class="input">
-                         <input type="text" placeholder="Username">
+                         <input name="email" type="text" placeholder="Username">
                      </div>   
                     
                     <div class="input">
-                        <input type="password" placeholder="Password">
+                        <input name="pass" type="password" placeholder="Password">
                         </div>
                         <!-- checkbox -->
                         <label for="" class="checkbox">
@@ -196,44 +196,51 @@
                         </label>
                         </div>
                         <!-- login button -->
-                        <button style="margin-top: 50px;">Login</button> 
+                        <button type ="submit" value="login" style="margin-top: 50px;">Login</button> 
                         <!-- inline CSS -->
                 </form>
                 <!-- registration form -->
-                <form action="">
+                <form action="register" method = "post">
                     <div class="inputs">
                         <div id="name"> 
                         <div class="input-reg">    
-                            <input type="text" placeholder="First Name">
+                            <input name="first name" type="text" placeholder="First Name">
                             </div>   
                         <div class="input-reg">
                             <!-- inline CSS -->
-                            <input type="text" placeholder="Last Name" style="margin-left:10px;">
+                            <input name="last name"type="text" placeholder="Last Name" style="margin-left:10px;">
                             </div>
                         </div>
                         <div class="input-reg">
-                            <input type="email" placeholder="Email">
+                            <input name="email" type="email" placeholder="Email">
                             </div>
                         <div class="input-reg">
-                            <input type="password" placeholder="Password">
+                            <input name="pass" type="password" placeholder="Password">
                             </div>
                         <div class="input-reg">
-                            <input type="text" placeholder="Address">
+                            <input name="address" type="text" placeholder="Address">
                             </div>
                         <div class="input-reg">
-                            <input type="number" placeholder="Phone No.">
+                            <input name="mobile" type="number" placeholder="Phone No.">
                             </div>
                             <p class="message">Already Registered ? <a href="#login">Login</a></p>
                             <!-- Register button -->
                             <!-- inline CSS -->
                             <button style="margin:auto;">Register</button>
+                            </div>
                 </form>
+                
+	}
+	
+		
+	</script>
             </div>
         </div>
      </div>
      
      <!-- Jquery CDN link -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
 
     <!-- jquery -->
     <script>
@@ -253,5 +260,7 @@
 
         $(window).trigger("hashchange");
     </script>
+    
+    
 </body>
 </html>
