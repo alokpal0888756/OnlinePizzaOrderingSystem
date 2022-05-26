@@ -226,7 +226,8 @@
                             <p class="message">Already Registered ? <a href="#login">Login</a></p>
                             <!-- Register button -->
                             <!-- inline CSS -->
-                            <button style="margin:auto;">Register</button>
+                        <!-- popup for successful register  -->
+                            <button  class="confirm" onclick="sucessMessage()"style="margin:auto">Register</button>
                             </div>
                 </form>
                 
@@ -257,8 +258,11 @@
                 $("#register").removeClass("selected"); 
             }
         });
-
+/* for popup for successfull register  */
         $(window).trigger("hashchange");
+        $('.confirm').on('click', function () {
+            return confirm('Registration Successful!!!!');
+        });
     </script>
     
     
