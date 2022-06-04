@@ -43,7 +43,7 @@ public class LoginServlet extends HttpServlet {
 			if(rs.next()) {
 				HttpSession session = request.getSession();
 				session.setAttribute("username",uname);
-				response.sendRedirect("index.jsp");
+				response.sendRedirect("assets/js/main.js");
 			}else {
 				request.setAttribute("status","failed");
 				response.sendRedirect("NewUser.jsp#login");
